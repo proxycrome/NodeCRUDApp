@@ -91,5 +91,9 @@ app.delete('/data/:id', (req, res) => {
     })
 })
 
+/* GET home page. */
+app.get('/', function (req, res) {
+  res.send('Hello Wolrd');
+});
 
 app.listen(process.env.PORT)

@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const port = 7000;
 
 const mongoose = require('mongoose');
 const connectionString = 'mongodb://localhost:27017/DataApp';
@@ -93,4 +92,4 @@ app.delete('/data/:id', (req, res) => {
 })
 
 
-app.listen(port, () => console.log(`app listening on post ${port}`))
+app.listen(process.env.PORT)

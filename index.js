@@ -93,4 +93,4 @@ app.delete('/data/:id', (req, res) => {
 })
 
 
-app.listen(port, () => console.log(`app listening on post ${port}`))
+app.listen(process.env.PORT)
